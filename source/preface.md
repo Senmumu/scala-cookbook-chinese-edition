@@ -37,7 +37,7 @@
     for (i <- Array(1,2,3)) println(i)
 ```
 "但是，如果你其实是想将这些元素转换到新的集合里，你需要的是一个 for/yield 表达式，或者 map方法。"
-
+```scala
     // for/yield
     scala> for (i <- Array(1,2,3)) yield i * 2 
     res0: Array[Int] = Array(2, 4, 6)
@@ -45,7 +45,7 @@
     // map
     scala> Array(1,2,3).map(_ * 2) 
     res1: Array[Int] = Array(2, 4, 6)
-
+```
 （_是占位符）<!--此处存疑 原文是 More on that _ character shortly.-->
 
 要编写这个关于遇到的问题和解决方法的清单，我遵循 Eat your own dog food（自己的产品自己也要用）哲学。
